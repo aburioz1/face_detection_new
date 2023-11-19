@@ -8,7 +8,7 @@ def detect_faces(image, min_neighbors, scale_factor, rectangle_color):
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
     # Load the pre-trained face cascade classifier
-    face_cascade = cv2.CascadeClassifier("C:\\Users\\HP\\Downloads\\haarcascade_frontalface_default.xml")
+    face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
     # Detect faces in the image
     faces = face_cascade.detectMultiScale(gray, minNeighbors=min_neighbors, scaleFactor=scale_factor)
